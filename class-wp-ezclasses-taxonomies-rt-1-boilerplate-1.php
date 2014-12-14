@@ -39,12 +39,20 @@ if ( ! class_exists('Class_WP_ezClasses_Taxonomies_RT_1_Boilerplate_1_TODO') ) {
     
 	/**
 	 * This is where your magic happens. The idea here is to (re) define as little as possible. Of course you
-	 * can add args to these various arrays[key] and they'll overide the defaults. The point is, this is all the 
-	 * TODOs you need to get a taxonomy up and running. 
+	 * can add args[] to these various sub-arrays and they'll overide the defaults. The point is, this is all the 
+	 * TODOs you need to get a taxonomy up and running (with as litte actual thinking as possible).
 	 */
 	protected function taxonomy_todo(){
 	
+	// $this->_str_action = 'init', 
+	// $this->_int_priortiy = 10, 
+	
+	  /**  
+	   * --
+	   
 	  $str_taxonomy = 'TODO';
+	  
+	  $arr_capabilities = $this->capabilities_defaults();
 	
 	  $arr_taxonomy_todo = array(
 	  
@@ -59,12 +67,16 @@ if ( ! class_exists('Class_WP_ezClasses_Taxonomies_RT_1_Boilerplate_1_TODO') ) {
 			'menu_name' 		=> 'TODO: name',			// labe
 			),
 		  'rewrite' => array(
-		    'slug' => 'TODO-slug',    // Note: if the slug is the same as $str_taxonomy then this can be removed / commented out. 
-			),			
+		    'slug' => 'TODO-slug',
+			),
+		  'capabilities' => $arr_capabilities,
 		  ),
 	    );
 	  
 	  return $arr_taxonomy_todo;
+	  
+	  * --
+	  */
 	}
 
   }

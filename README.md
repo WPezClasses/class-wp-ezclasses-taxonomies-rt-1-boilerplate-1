@@ -1,9 +1,9 @@
 # Org: WPezClasses
 ### Product: Class_WP_ezClasses_Taxonomies_RT_1_Boilerplate_1
 
-##### WordPress taxonomies The ezWay. This is the boilerplate to extend class-wp-ezclasses-taxonomies-rt-1.
+##### Custom WordPress taxonomies done The ezWay 
 
-Copy this into your plugin or theme; do the TODOs; and voila you are done. 
+This is the boilerplate to extend: https://github.com/WPezClasses/class-wp-ezclasses-taxonomies-rt-1
 
 =======================================================================================
 
@@ -14,4 +14,10 @@ Copy this into your plugin or theme; do the TODOs; and voila you are done.
 
 #### Overview
 
-TODO (if it's even necessary)
+1) Make a copy of the boilerplate - giving it your own unique file + class name - into your theme or plugin:
+
+2) Do the boilerplate's TODOs. 
+
+2.5) Don't forget to include / require it somewhere.
+
+3) Your taxonomy is...Done! Yeah, that ez.
